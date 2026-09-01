@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Legal Saathi | Generate Report</title>
+  <meta name="description" content="Describe your legal situation and generate an AI-powered report with Legal Saathi.">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header inner-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html"><img class="brand-logo" src="images/legal-saathi-icon.png" alt="Legal Saathi logo"><span><strong>LEGAL SAATHI</strong><small>Your Own Legal Saathi</small></span></a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <nav class="nav"><a href="index.html">Home</a><a href="about.html">Upload Documents</a><a class="active" href="contact.html">Generate Report</a><a class="nav-cta" href="index.html#legal-query">Ask Legal Saathi</a></nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-banner"><div class="container"><p class="eyebrow">AI REPORT GENERATOR</p><h1>Generate Your Report</h1></div></section>
+
+    <section class="section report-section" id="evaluation">
+      <div class="container report-container">
+        <div class="section-heading center-heading">
+          <h2>Tell Legal Saathi Your Complete Situation</h2>
+          <p>Write everything relevant to your legal issue. The connected LLM can use your situation and available document context to generate a structured report.</p>
+        </div>
+
+        <form class="report-form" id="reportForm">
+          <label for="situation">Describe your whole situation</label>
+          <textarea id="situation" name="situation" rows="14" placeholder="Write your complete situation here. Include the important dates, people or organisations involved, events, documents you have, and what you want to understand or achieve..." required></textarea>
+          <div class="form-actions report-actions">
+            <button class="btn btn-dark" type="submit">Generate Report</button>
+            <span class="form-note">AI-generated information • Please verify important legal information</span>
+          </div>
+        </form>
+
+        <div class="report-output" id="reportOutput" hidden>
+          <div class="report-output-head"><h3>Your Legal Saathi Report</h3><button class="btn btn-light" id="printReport" type="button">Print / Save Report</button></div>
+          <div id="reportText" class="report-text"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand"><img class="footer-logo" src="images/legal-saathi-icon.png" alt="Legal Saathi logo"><strong>LEGAL SAATHI</strong><small>Your Own Legal Saathi</small><div class="socials"><a href="#">◎</a><a href="#">f</a><a href="#">♥</a></div></div>
+      <div><h3>Useful Links</h3><a href="index.html">› &nbsp; Home</a><a href="about.html">› &nbsp; Upload Documents</a><a href="contact.html">› &nbsp; Generate Report</a></div>
+      <div><h3>Legal Saathi</h3><p>⌁ &nbsp; AI-powered legal assistance</p><p>⌁ &nbsp; Document analysis</p><p>⌁ &nbsp; Legal report generation</p></div>
+    </div>
+    <div class="copyright">© <span class="year"></span> Legal Saathi. All Rights Reserved.</div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

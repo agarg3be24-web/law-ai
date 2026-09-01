@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Legal Saathi | Smart Assistance</title>
+  <meta name="description" content="Legal Saathi - smart assistance for your queries, documents and reports.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header hero-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Legal Saathi home">
+        <img class="brand-logo" src="images/legal-saathi-icon.png" alt="Legal Saathi logo">
+        <span><strong>LEGAL SAATHI</strong><small>Your Own Legal Saathi</small></span>
+      </a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <nav class="nav">
+        <a class="active" href="index.html">Home</a>
+        <a href="about.html">Upload Documents</a>
+        <a href="contact.html">Generate Report</a>
+        <a class="nav-cta" href="#legal-query">Ask Saathi</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero home-hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <p class="eyebrow">YOUR ASSISTANT</p>
+        <h1>Solutions for Your Legal Needs.<br>Your Own Saathi.</h1>
+        <p class="hero-copy">Ask questions, understand documents and get clear, useful answers in one place.</p>
+        <a class="btn btn-outline" href="#legal-query">Ask Saathi</a>
+      </div>
+    </section>
+
+    <section class="feature-strip">
+      <div class="container feature-grid two-features">
+        <article class="feature-card"><span class="feature-icon">♟</span><h3>Smart Guidance</h3></article>
+        <article class="feature-card"><span class="feature-icon">▤</span><h3>Documents & Reports</h3></article>
+      </div>
+    </section>
+
+    <section class="section intro" id="legal-query">
+      <div class="container query-section">
+        <div class="section-heading">
+          <p class="eyebrow dark-eyebrow">ASK SAATHI</p>
+          <h2>Ask Saathi</h2>
+          <p>Tell Saathi what you need help with. Your question is answered using the connected knowledge base and smart technology.</p>
+        </div>
+        <form class="saathi-chat" id="queryForm">
+          <div class="chat-input-row">
+            <input id="legalQuery" name="legalQuery" type="text" placeholder="Ask anything" autocomplete="off" required>
+            <button class="search-btn" type="submit" aria-label="Search">⌕</button>
+          </div>
+          <div class="chat-note">Ask about a situation, document, process or anything you want to understand.</div>
+          <div class="ai-response" id="queryResponse" hidden>
+            <h3>Saathi's Response</h3>
+            <p id="queryResponseText"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="section quick-actions">
+      <div class="container quick-grid">
+        <a class="quick-card" href="about.html">
+          <span class="quick-number">01</span>
+          <h3>Upload Documents</h3>
+          <p>Upload agreements, notices, contracts or other legal documents for analysis.</p>
+        </a>
+        <a class="quick-card" href="contact.html">
+          <span class="quick-number">02</span>
+          <h3>Generate a Report</h3>
+          <p>Explain your complete situation and generate a clear, structured report with Saathi.</p>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img class="footer-logo" src="images/legal-saathi-icon.png" alt="Legal Saathi logo">
+        <strong>LEGAL SAATHI</strong>
+        <small>Your Own Legal Saathi</small>
+        <div class="socials"><a href="#" aria-label="Instagram">◎</a><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="Twitter">♥</a></div>
+      </div>
+      <div>
+        <h3>Useful Links</h3>
+        <a href="index.html">› &nbsp; Home</a>
+        <a href="about.html">› &nbsp; Upload Documents</a>
+        <a href="contact.html">› &nbsp; Generate Report</a>
+      </div>
+      <div>
+        <h3>Saathi</h3>
+        <p>⌁ &nbsp; Smart assistance</p>
+        <p>⌁ &nbsp; Document analysis</p>
+        <p>⌁ &nbsp; Report generation</p>
+      </div>
+    </div>
+    <div class="copyright">© <span class="year"></span> Legal Saathi. All Rights Reserved.</div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

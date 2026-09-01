@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Legal Saathi | Upload Documents</title>
+  <meta name="description" content="Upload your legal documents to Legal Saathi for AI-powered document analysis.">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header inner-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html"><img class="brand-logo" src="images/legal-saathi-icon.png" alt="Legal Saathi logo"><span><strong>LEGAL SAATHI</strong><small>Your Own Legal Saathi</small></span></a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <nav class="nav"><a href="index.html">Home</a><a class="active" href="about.html">Upload Documents</a><a href="contact.html">Generate Report</a><a class="nav-cta" href="index.html#legal-query">Ask Legal Saathi</a></nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-banner"><div class="container"><p class="eyebrow">DOCUMENT ANALYSIS</p><h1>Upload Your Documents</h1></div></section>
+
+    <section class="section upload-section">
+      <div class="container upload-container">
+        <div class="section-heading center-heading">
+          <h2>Upload the documents related to your situation</h2>
+          <p>Legal Saathi can use your uploaded documents as context for AI-powered analysis and assistance.</p>
+        </div>
+
+        <form id="documentForm" class="upload-form">
+          <label class="drop-zone" for="documents">
+            <input id="documents" name="documents" type="file" multiple accept=".pdf,.doc,.docx,.txt,.jpg,.jpeg,.png">
+            <span class="upload-icon">↑</span>
+            <strong>Drop your documents here</strong>
+            <span>or click to browse your files</span>
+            <small>PDF, DOC, DOCX, TXT, JPG or PNG</small>
+          </label>
+          <div id="fileList" class="file-list"></div>
+          <button class="btn btn-dark upload-submit" type="submit">Upload Documents</button>
+          <p class="form-status" id="uploadStatus" role="status"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section upload-info">
+      <div class="container quick-grid">
+        <div class="info-card"><span>01</span><h3>Upload</h3><p>Select one or more documents connected to your legal issue.</p></div>
+        <div class="info-card"><span>02</span><h3>Analyse</h3><p>The connected AI system can use the documents as context for your query.</p></div>
+        <div class="info-card"><span>03</span><h3>Understand</h3><p>Use the resulting insights to better understand the information in your documents.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand"><img class="footer-logo" src="images/legal-saathi-icon.png" alt="Legal Saathi logo"><strong>LEGAL SAATHI</strong><small>Your Own Legal Saathi</small><div class="socials"><a href="#">◎</a><a href="#">f</a><a href="#">♥</a></div></div>
+      <div><h3>Useful Links</h3><a href="index.html">› &nbsp; Home</a><a href="about.html">› &nbsp; Upload Documents</a><a href="contact.html">› &nbsp; Generate Report</a></div>
+      <div><h3>Legal Saathi</h3><p>⌁ &nbsp; AI-powered legal assistance</p><p>⌁ &nbsp; Document analysis</p><p>⌁ &nbsp; Legal report generation</p></div>
+    </div>
+    <div class="copyright">© <span class="year"></span> Legal Saathi. All Rights Reserved.</div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

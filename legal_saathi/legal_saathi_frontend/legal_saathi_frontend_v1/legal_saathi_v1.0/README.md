@@ -1,6 +1,7 @@
-# Opeyemi Legal Services — redesigned interface
+# LEGAL-SAATHI INTERFACE
 
-Static HTML/CSS/JS implementation based on the supplied reference image.
+
+
 
 ## Files
 - `index.html` — Home page
@@ -14,10 +15,4 @@ Static HTML/CSS/JS implementation based on the supplied reference image.
 ## Run
 Open `index.html` in a browser, or serve the folder with any local web server.
 
-## Replace before deployment
-1. Put your real hero/background image at `images/hero.jpg`.
-2. Put your real team image at `images/team.jpg`.
-3. Replace placeholder social links.
-4. Connect the contact form to your backend/email service.
-5. Replace placeholder text with the firm's actual copy.
-6. Replace the text/emoji logo with the firm's official logo if available.
+

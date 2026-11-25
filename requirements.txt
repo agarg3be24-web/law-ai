@@ -1,0 +1,20 @@
+# Web layer
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+python-multipart==0.0.20
+pydantic==2.10.5
+
+# One OpenAI compatible client covers Groq, Gemini, OpenAI and Hugging Face
+openai==1.59.6
+
+# Retrieval. fastembed runs MiniLM on onnxruntime, so no torch in the image.
+fastembed==0.5.1
+numpy==2.2.1
+scipy==1.15.1
+
+# Document uploads
+pypdf==5.1.0
+python-docx==1.1.2
+
+# Local development convenience
+python-dotenv==1.0.1
